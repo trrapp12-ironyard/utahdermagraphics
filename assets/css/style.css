@@ -50,3 +50,10 @@
   z-index: -1;
   background: url("../img/pexels-photo-872930.jpeg") no-repeat center center;
 }
+
+/*individual adjustments*/
+
+.low_center {
+  padding-top: 10%;
+  padding-bottom: auto;
+}
