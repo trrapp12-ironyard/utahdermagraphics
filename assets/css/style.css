@@ -1,8 +1,6 @@
 /*color palette*/
 
-.wide {
-  width: 100vw;
-}
+
 
 .white {
   color: white;
@@ -56,4 +54,19 @@
 .low_center {
   padding-top: 10%;
   padding-bottom: auto;
+}
+
+.wide {
+  width: 100vw;
+}
+
+.vertical_white_space {
+  margin-top: 18vh;
+}
+
+.card_block {
+  max-width: 100%;
+  height: auto;
+  max-height: 499.3px;
+  margin-bottom: 20px;
 }
