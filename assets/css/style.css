@@ -1,0 +1,43 @@
+/*color palette*/
+
+.white {
+  color: white;
+}
+.peach {
+  background-color: rgba(255, 187, 145, 0.2);
+}
+
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.josefin_sans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.josefin_slab {
+  font-family: 'Josefin Slab', serif;
+}
+.poiret_one {
+  font-family: 'Poiret One', cursive;
+}
+
+.sorts_mill_goudy {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.reenie_beanie {
+  font-family: 'Reenie Beanie', cursive;
+  letter-spacing: .25em;
+}
+
+.nixie_one {
+  font-family: 'Nixie One', cursive;
+}
+/*These are a list of the Google font families used for easy reference
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Sorts Mill Goudy', serif;
+font-family: 'Reenie Beanie', cursive;*/
