@@ -1,11 +1,17 @@
 /*color palette*/
 
+.wide {
+  width: 100vw;
+}
+
 .white {
   color: white;
 }
 .peach {
   background-color: rgba(255, 187, 145, 0.2);
 }
+
+/*fonts that were used */
 
 .quicksand {
   font-family: 'Quicksand', sans-serif;
@@ -34,10 +40,13 @@
 .nixie_one {
   font-family: 'Nixie One', cursive;
 }
-/*These are a list of the Google font families used for easy reference
-font-family: 'Quicksand', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Sorts Mill Goudy', serif;
-font-family: 'Reenie Beanie', cursive;*/
+
+/*images*/
+.lead_photo {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 20px;
+  background-size: 100%;
+  z-index: -1;
+  background: url("../img/pexels-photo-872930.jpeg") no-repeat center center;
+}
