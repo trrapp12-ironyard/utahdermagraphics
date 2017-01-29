@@ -61,7 +61,7 @@
 }
 
 .vertical_white_space {
-  margin-top: 18vh;
+  margin-top: 25vh;
 }
 
 .card_block {
@@ -73,4 +73,8 @@
 
 .lower_gap {
   margin-bottom: 30px;
+}
+
+.align_right {
+  text-align: right;
 }
