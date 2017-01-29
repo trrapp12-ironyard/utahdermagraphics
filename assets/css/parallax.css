@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  margin: 45% 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  margin: 0;
+}
+
+/*start parallax*/
+
+.parallax {
+  background: url("./") fixed 100%;
+}
+
+.parallax-inner {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  
+}

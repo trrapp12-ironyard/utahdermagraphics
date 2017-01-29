@@ -1,0 +1,27 @@
+{
+  "name": "utah_dermagraphics",
+  "version": "1.0.0",
+  "description": "At Utah Dermagraphics we bring a higher stander of quality and comfort. Our Artist, Melissa Johnson, is a certified Dermagraphic Technician, Micro-pigmentation Specialist and a DMP Instructor offering extensive training courses . Melissa has 10 years of experiance, along with advanced continued education to ensure that her clients and students needs are met with the highest proficiency.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trrapp12/utahdermagraphics.git"
+  },
+  "keywords": [
+    "dermagraphics",
+    "tattoo",
+    "removal",
+    "scar",
+    "treatment",
+    "micro-pigmentation"
+  ],
+  "author": "Trevor Rapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trrapp12/utahdermagraphics/issues"
+  },
+  "homepage": "https://github.com/trrapp12/utahdermagraphics#readme"
+}
