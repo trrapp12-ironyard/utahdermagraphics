@@ -1,7 +1,5 @@
 /*color palette*/
 
-
-
 .white {
   color: white;
 }
@@ -96,6 +94,7 @@
   line-height: 2em;
 }
 
+/*The title bars are id's instead of classes because the CSS was getting over-ridden and I needed to raise the importance level*/
 #title_bar_private {
   margin: 0% -100% 10% -100%;
   padding: 5vh;
@@ -132,12 +131,8 @@
   background-attachment: fixed;
 }
 
-.nav-up {
-  top: -127px;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  transition: top 0.2s ease-in-out;
+#nav.shrink {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
