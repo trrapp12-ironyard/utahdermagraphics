@@ -119,6 +119,7 @@
 
 .services_title {
   font-size: 250px;
+  text-decoration: underline;
   font-weight: bolder;
   /*allows clipping*/
   -webkit-text-fill-color: transparent;
@@ -126,7 +127,17 @@
   /*background*/
   background-image: url("../img/sensual-sexy-glamur-fashion-60708-medium.jpeg");
   /*fallback if browser doesn't work*/
-  color: red;
+  color: black;
   /*makes the picture in the background fixed*/
   background-attachment: fixed;
+}
+
+.nav-up {
+  top: -127px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
 }
