@@ -5,8 +5,13 @@
 .white {
   color: white;
 }
+
 .peach {
   background-color: rgba(255, 187, 145, 0.2);
+}
+
+.teal {
+  background-color: rgba(65, 178, 178, 0.2);
 }
 
 /*fonts that were used */
@@ -61,7 +66,7 @@
 }
 
 .vertical_white_space {
-  margin-top: 25vh;
+  margin-top: 2vh;
 }
 
 .card_block {
@@ -77,4 +82,51 @@
 
 .align_right {
   text-align: right;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.vertical_padding {
+  padding: 0vw 20vw 10vw 20vw;
+}
+
+.light_line_spacing {
+  line-height: 2em;
+}
+
+#title_bar_private {
+  margin: 0% -100% 10% -100%;
+  padding: 5vh;
+}
+
+#title_bar_space {
+  margin: 0% -100% 10% -100%;
+  padding: 5vh;
+}
+
+#title_bar_services {
+  margin: 0% -100% 10% -100%;
+  padding: 5vh;
+}
+
+.float_left {
+  float: left;
+  break-after: right;
+  margin: 10px 50px 10px 10px;
+}
+
+.services_title {
+  font-size: 250px;
+  font-weight: bolder;
+  /*allows clipping*/
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /*background*/
+  background-image: url("../img/sensual-sexy-glamur-fashion-60708-medium.jpeg");
+  /*fallback if browser doesn't work*/
+  color: red;
+  /*makes the picture in the background fixed*/
+  background-attachment: fixed;
 }
