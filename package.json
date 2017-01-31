@@ -20,6 +20,9 @@
   ],
   "author": "Trevor Rapp",
   "license": "ISC",
+  "engines": {
+    "node": "6.9.0"
+  },
   "bugs": {
     "url": "https://github.com/trrapp12/utahdermagraphics/issues"
   },
