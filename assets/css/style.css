@@ -12,6 +12,10 @@
   background-color: rgba(65, 178, 178, 0.2);
 }
 
+.gray {
+  background-color: #ededed;
+}
+
 /*fonts that were used */
 
 .quicksand {
@@ -86,8 +90,20 @@
   text-align: center;
 }
 
+.align_left {
+  text-align: left;
+}
+
 .vertical_padding {
   padding: 0vw 20vw 10vw 20vw;
+  margin-bottom: 20vh;
+  margin-right: -20vw;
+  margin-left: -20vw;
+}
+
+.vertical_padding_melissa {
+  padding: 30vh 20vw 25vw 20vw;
+  width: 100%;
 }
 
 .light_line_spacing {
@@ -96,7 +112,7 @@
 
 /*The title bars are id's instead of classes because the CSS was getting over-ridden and I needed to raise the importance level*/
 #title_bar_private {
-  margin: 10% 0 10% 0;
+  margin: 10% 0 0% 0;
   padding: 5vh;
   overflow: hidden;
 }
@@ -138,4 +154,37 @@
   opacity: 0;
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
+}
+
+.circular_image {
+  width: 32%;
+  height: 32%;
+  border-radius: 50%;
+  display: block;
+  padding: .5em 1em 1em 1em;
+  margin: 2em;
+}
+
+.square {
+  width: 33vw;
+  height: 50vh;
+  background: white;
+  padding: 18px 60px 5px 60px;
+  margin: 0;
+  border-radius: 2%;
+  margin-left: 22vw;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid white;
+  margin-left: 26vw;
+  z-index: -1;
+}
+
+.instructor_margin {
+  margin: 5% 0 15% 0
 }
