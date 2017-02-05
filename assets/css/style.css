@@ -71,6 +71,10 @@
   margin-top: 2vh;
 }
 
+.vertical_white_space_copyright {
+  margin-top: 18vh;
+}
+
 .card_block {
   max-width: 100%;
   height: auto;
@@ -102,8 +106,12 @@
 }
 
 .vertical_padding_melissa {
-  padding: 30vh 20vw 25vw 20vw;
+  padding: 10vh 20vw 10vh 20vw;
   width: 100%;
+}
+
+.empty_padding_melissa {
+  height: 5vw;
 }
 
 .light_line_spacing {
@@ -167,7 +175,7 @@
 
 .square {
   width: 33vw;
-  height: 50vh;
+  height: 47vh;
   background: white;
   padding: 18px 60px 5px 60px;
   margin: 0;
@@ -196,4 +204,22 @@
 .normalize {
   margin: 0;
   border: 0;
+}
+
+.line_separator {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height:1px;
+  background:#717171;
+  border-bottom:1px solid #313030;`
+}
+
+.line_separator_bottom {
+  width: 140%;
+  margin-left: -20%;
+  margin-right: auto;
+  height:1px;
+  background:#717171;
+  border-bottom:1px solid #313030;`
 }
