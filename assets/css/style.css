@@ -192,3 +192,8 @@
 .background_cover {
   width: 110%;
 }
+
+.normalize {
+  margin: 0;
+  border: 0;
+}
