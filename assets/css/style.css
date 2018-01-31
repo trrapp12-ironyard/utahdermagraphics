@@ -168,7 +168,7 @@
 }
 .square {
     width: 61vw;
-    height: 61vh;
+    height: 70vh;
     background: white;
     padding: 18px 60px 18px 60px;
     margin: 0;
@@ -269,6 +269,37 @@ ul li p {
     vertical-align: bottom;
     /* color: #023DA3; */
 }
+ul .arrow {
+  background-color: white;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+ul .arrow:hover {
+    background-color: #02A35A;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    /* color: #023DA3; */
+}
+ul .arrow p:hover {
+    color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    /* color: #023DA3; */
+}
+
+ul .arrow p strong:hover {
+  color: white;
+  transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+ul li p strong {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    text-transform: uppercase;
+}
 
 .isolate-last-line {
   line-height: 3em;
@@ -285,9 +316,9 @@ ul > li > .fa {
 }
 
 .arrow {
-  width: 300px; 
-  margin: 0; 
-  display: inline-block;
+    width: 639px;
+    margin: 0;
+    display: inline-block;
 }
 
 .title-row {
@@ -296,12 +327,15 @@ ul > li > .fa {
 }
 .title-row h2 {
     text-align: left;
-    font-size: 2em;
+    font-size: 6em;
     color: #02A35A;
     text-transform: uppercase;
     letter-spacing: 1%;
     margin: 42px 0 0 0;
 }
 .long-row {
-  
+    width: 510px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
 }
