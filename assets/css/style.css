@@ -71,10 +71,6 @@
   margin-top: 2vh;
 }
 
-.vertical_white_space_copyright {
-  margin-top: 18vh;
-}
-
 .card_block {
   max-width: 100%;
   height: auto;
@@ -237,10 +233,10 @@
 
 /*change the button default color*/
 
-.btn-primary {
+btn-primary {
     color: #fff;
-    background-color: #023DA3;
-    border-color: #023DA3;
+    background-color: #026EAD;
+    border-color: #026EAD;
 }
 ._2tga {
     color: #fff;
@@ -329,7 +325,7 @@ ul > li > .fa {
 .title-row h2 {
     text-align: left;
     font-size: 6em;
-    color: #02A35A;
+    color: #b5b5b5;
     text-transform: uppercase;
     letter-spacing: 1%;
     margin: 42px 0 0 0;
@@ -346,4 +342,11 @@ ul > li > .fa {
   margin: 0;
   padding: 0;
   border: 0;
+}
+.mapspacing {
+  min-height: 120px;
+}
+h4, .h4 {
+    font-size: 18px;
+    color: #026ead;
 }
