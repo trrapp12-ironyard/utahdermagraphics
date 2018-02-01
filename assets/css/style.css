@@ -179,12 +179,13 @@
 .vertical_padding_melissa {
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    background: #026EAD;
 }
-.vertical_padding_melissa:hover {
+/* .vertical_padding_melissa:hover {
     background: #026EAD;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-}
+} */
 .triangle {
   width: 0;
   height: 0;
@@ -249,7 +250,7 @@
 h2 {
     text-align: left;
     font-size: 2em;
-    color: #02A35A;
+    color: #b5b5b5;
     text-transform: uppercase;
     letter-spacing: 1%;
     margin: 0;
@@ -275,7 +276,7 @@ ul .arrow {
   transition-timing-function: ease;
 }
 ul .arrow:hover {
-    background-color: #02A35A;
+    background-color: #b5b5b5;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     /* color: #023DA3; */
@@ -338,4 +339,11 @@ ul > li > .fa {
     height: auto;
     display: inline-block;
     vertical-align: text-top;
+}
+#footer-container {
+  background-color: #b5b5b5;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
