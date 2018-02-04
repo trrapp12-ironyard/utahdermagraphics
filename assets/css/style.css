@@ -350,3 +350,75 @@ h4, .h4 {
     font-size: 18px;
     color: #026ead;
 }
+
+@media (max-width: 13000px) {
+  .square {
+    width: 61vw;
+    height: 130vh;
+    background: white;
+    padding: 18px 60px 18px 60px;
+    margin: 0;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .long-row {
+      width: 350px;
+      height: auto;
+      display: inline-block;
+      vertical-align: text-top;
+  }
+  .title-row h2 {
+    text-align: left;
+    font-size: 5em;
+    color: #b5b5b5;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+    margin: 42px 0 0 0;
+  }
+  .arrow {
+    width: 450px;
+    margin: 0;
+    display: inline-block;
+  }
+  ul li p {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  ul li p strong {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    text-transform: uppercase;
+}
+
+  p {
+    margin: 0 0 15px;
+  }
+  p .long-row {
+    width: 372px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+  .circular_image {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    display: block;
+    padding: .5em 1em 1em 0;
+    margin: 0 1em 10em 0;
+  }
+  #hide {
+    display:none;
+  }
+  #widen-arrow {
+    width: 600px;
+  }
+  #widen-arrow2 {
+    width: 550px;
+  }
+}
