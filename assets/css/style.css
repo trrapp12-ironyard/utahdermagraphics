@@ -433,3 +433,23 @@ h4, .h4 {
 .card {
   margin-top: 50px;
 }
+.basic {
+  margin-right: 29.5%;
+}
+
+.intermediate {
+  margin-right: 25%;
+}
+.advanced {
+  margin-right: 0%;
+}
+.card-body {
+  background-color: #C0C0C0;
+  padding: 20px;
+  color: white;
+  line-height: 25px;
+}
+
+#basic[aria-expanded="true"] ~ div#square.square {
+  background: red;
+}
