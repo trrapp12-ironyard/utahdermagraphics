@@ -342,6 +342,7 @@ ul > li > .fa {
   margin: 0;
   padding: 0;
   border: 0;
+  height: 80vh;
 }
 .mapspacing {
   min-height: 120px;
@@ -354,7 +355,7 @@ h4, .h4 {
 @media (max-width: 13000px) {
   .square {
     width: 61vw;
-    height: 130vh;
+    height: 76vh;
     background: white;
     padding: 18px 60px 18px 60px;
     margin: 0;
@@ -362,12 +363,12 @@ h4, .h4 {
     margin-left: auto;
     margin-right: auto;
 }
-  .long-row {
-      width: 350px;
-      height: auto;
-      display: inline-block;
-      vertical-align: text-top;
-  }
+.long-row {
+    width: 545px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+}
   .title-row h2 {
     text-align: left;
     font-size: 5em;
@@ -377,7 +378,7 @@ h4, .h4 {
     margin: 42px 0 0 0;
   }
   .arrow {
-    width: 450px;
+    width: 60%;
     margin: 0;
     display: inline-block;
   }
@@ -415,13 +416,20 @@ h4, .h4 {
   #hide {
     display:none;
   }
-  #widen-arrow {
+  /* #widen-arrow {
     width: 600px;
   }
   #widen-arrow2 {
     width: 540px;
-  }
+  } */
   strong {
     color: black;
   }
+}
+
+.card-container {
+  width: 55vw;
+}
+.card {
+  margin-top: 50px;
 }
