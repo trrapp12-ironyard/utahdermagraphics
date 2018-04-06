@@ -25,17 +25,45 @@
   <script src="https://use.fontawesome.com/8525b44850.js"></script>
   <script src="./assets/js/ie-emulation-modes-warning.js"></script>
   <div id="fb-root"></div>
+  <!--  step 1: create a function [x]
+        step 2: make sure it is connected [x]
+        step 3: make sure the function is called on the click of three separate accordions [x]
+        step 4: make if statement that checks the state of the accordion as opened or closed [x]
+        step 5: make any statement that be console logged if above is true [x]
+        step 6: once working, change statement to affect the css as you undesirable [ ]
+        step 7: rinse, wash, repeat [ ]
+
+        Notes: div.card.card-body is the container that has the text
+      div#square.square is the container that holds it that will need to expand-->
   <script>
+
+  var cardbodyheight = document.getElementById('cardbody1').style.height;
+  var squareheight = document.getElementById('square').style.height;
+
+
+
       function accordion() {
     console.log("the accordion is connected")
-    if (document.getElementById('basic').getAttribute('aria-expanded') = true) {
-      console.log(5 + 6);
-    } else if () {
-      console.log('hi')
-    } else if () {
-      console.log('hi')
+    if (document.getElementById('basic').getAttribute('aria-expanded') == 'true' || document.getElementById('intermediate').getAttribute('aria-expanded') == 'true' || document.getElementById('advanced').getAttribute('aria-expanded') == 'true') {
+      // check to see if the aria area is expanding or not
+      console.log("aria-expanded was true, area is now closed");
+      // see what the heights of the elements are after each click
+      console.log(cardbodyheight);
+      console.log(squareheight);
+
+      var cardbodyheight = document.getElementById('cardbody1').style.height;
+      var squareheight = document.getElementById('square').style.height;
+      console.log(cardbodyheight);
+      console.log(squareheight);
+
+      // working syntactical example that changes the square background color when you click on the button...
+      // document.getElementById('square').style.backgroundColor = "red";
+
+
+      document.getElementById('square').style.backgroundColor = "red";
+
     } else {
-      console.log('hi')
+      console.log('aria-expanded was false, area is now opened')
     }
   };
 
@@ -171,25 +199,25 @@
                 <h5 class="mb-0">
                   <p style="margin-left: 35px">
                     <button class="btn btn-primary basic" id="basic" onclick="accordion()" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Basic</button>
-                    <button class="btn btn-primary intermediate" id="intermediate" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate</button>
-                    <button class="btn btn-primary advanced" id="advanced" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced</button>
+                    <button class="btn btn-primary intermediate" id="intermediate" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate</button>
+                    <button class="btn btn-primary advanced" id="advanced" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced</button>
                   </p>
                   <div class="row">
                     <div class="col-lg-4">
                       <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
+                        <div class="card card-body" id="cardbody1" >Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="card card-body">Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
+                        <div class="card card-body" id="cardbody2" >Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="card card-body">Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
+                        <div class="card card-body" id="cardbody3" >Upon enrollment, each student is sent an IIPC Preparation Pack, including 3 textbooks (Permanent Cosmetics: The Ultimate Guide, Medical/Surgical/Tattoo Glossary, and Winning Colours for All Seasons) and 2 instructional DVDs (Including Videos On: Winning Colours for All Seasons, Eyebrow Hair Simulation and Lash Enhancement for Men w/ the Rotary Machine, Lipliner and Full Lip Colour with the Rotary Machine, Techniques in Eyebrow Hair Simulation, Techniques in Eyeliner Application with the Rotary Machine).
                         </div>
                       </div>
                     </div>
@@ -354,23 +382,5 @@ $(document).ready(function () {
   $('.dropdown-toggle').dropdown();
 });
 </script>
-<!-- <script>
-    function accordion() {
-  console.log("the accordion is connected")
-  if (document.getElementById('basic').getAttribute('aria-expanded') = true) {
-    console.log('she blew!')
-  }
-  else if () {
-    console.log('hi')
-  }
-  else if () {
-    console.log('hi')
-  }
-  else {
-    console.log('hi')
-  }
-};
-
-</script> -->
 </body>
 </html>
