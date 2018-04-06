@@ -47,23 +47,15 @@
     if (document.getElementById('basic').getAttribute('aria-expanded') == 'true' || document.getElementById('intermediate').getAttribute('aria-expanded') == 'true' || document.getElementById('advanced').getAttribute('aria-expanded') == 'true') {
       // check to see if the aria area is expanding or not
       console.log("aria-expanded was true, area is now closed");
-      // see what the heights of the elements are after each click
-      console.log(cardbodyheight);
-      console.log(squareheight);
-
-      var cardbodyheight = document.getElementById('cardbody1').style.height;
-      var squareheight = document.getElementById('square').style.height;
-      console.log(cardbodyheight);
-      console.log(squareheight);
 
       // working syntactical example that changes the square background color when you click on the button...
       // document.getElementById('square').style.backgroundColor = "red";
 
-
-      document.getElementById('square').style.backgroundColor = "red";
+      document.getElementById('square').style.height = "1020px";
 
     } else {
-      console.log('aria-expanded was false, area is now opened')
+      console.log('aria-expanded was false, area is now opened');
+      document.getElementById('square').style.height = "700px";
     }
   };
 
