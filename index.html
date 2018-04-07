@@ -37,27 +37,32 @@
       div#square.square is the container that holds it that will need to expand-->
   <script>
 
-  var cardbodyheight = document.getElementById('cardbody1').style.height;
-  var squareheight = document.getElementById('square').style.height;
-
+var basic = document.getElementById('basic').getAttribute('aria-expanded')
+var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded')
+var advanced = document.getElementById('advanced').getAttribute('aria-expanded')
 
 
       function accordion() {
-    console.log("the accordion is connected")
-    if (document.getElementById('basic').getAttribute('aria-expanded') == 'true' || document.getElementById('intermediate').getAttribute('aria-expanded') == 'true' || document.getElementById('advanced').getAttribute('aria-expanded') == 'true') {
+    // console.log("the accordion is connected")
+    console.log(basic)
+
+        if (basic == 'true' && intermediate == 'true' &&  advanced == 'true') {
+          console.log('all are closed')
+            document.getElementById('card-border').classList.remove('card-border');
+        }
+        else if (basic == 'true' || intermediate == 'true' ||  advanced == 'true') {
       // check to see if the aria area is expanding or not
-      console.log("aria-expanded was true, area is now closed");
+        console.log("aria-expanded was true, area is now closed");
 
-      // working syntactical example that changes the square background color when you click on the button...
-      // document.getElementById('square').style.backgroundColor = "red";
+        document.getElementById('square').style.height = "700px";
+        // document.getElementById('card-border').classList.remove('card-border');
 
-      document.getElementById('square').style.height = "700px";
-
-    } else {
-      console.log('aria-expanded was false, area is now opened');
-      document.getElementById('square').style.height = "850px";
-    }
-  };
+      }  else {
+          console.log('aria-expanded was false, area is now opened');
+          document.getElementById('square').style.height = "840px";
+          document.getElementById('card-border').classList.add('card-border');
+      }
+    };
 
   </script>
   <script>(function(d, s, id) {
@@ -190,11 +195,11 @@
               <div class="card-header" role="tab" id="headingOne">
                 <h5 class="mb-0">
                   <p style="margin-left: 35px">
-                    <button class="btn btn-primary basic" id="basic" onclick="accordion()" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Basic</button>
-                    <button class="btn btn-primary intermediate" id="intermediate" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate</button>
-                    <button class="btn btn-primary advanced" id="advanced" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced</button>
+                    <button class="btn btn-primary basic" id="basic" onclick="accordion()" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Basic &nbsp;<i class="fa fa-caret-down"></i></button>
+                    <button class="btn btn-primary intermediate" id="intermediate" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate &nbsp;<i class="fa fa-caret-down"></i></button>
+                    <button class="btn btn-primary advanced" id="advanced" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced &nbsp;<i class="fa fa-caret-down"></i></button>
                   </p>
-                  <div class="row">
+                  <div class="row" id="card-border">
                     <div class="col-lg-4">
                       <div class="collapse multi-collapse" id="multiCollapseExample1">
                         <div class="card card-body" id="cardbody1" >Upon enrollment, each student is sent an IIPC Preparation Pack and 2 instructional DVDs.
