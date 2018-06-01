@@ -37,31 +37,34 @@
       div#square.square is the container that holds it that will need to expand-->
   <script>
 
-var basic = document.getElementById('basic').getAttribute('aria-expanded')
-var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded')
-var advanced = document.getElementById('advanced').getAttribute('aria-expanded')
+// var basic = document.getElementById('basic').getAttribute('aria-expanded');
+// var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
+// var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
 
 
       function accordion() {
-    // console.log("the accordion is connected")
-    console.log(basic)
 
-        if (basic == 'true' && intermediate == 'true' &&  advanced == 'true') {
+        var basic = document.getElementById('basic').getAttribute('aria-expanded');
+        var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
+        var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
+    // console.log("the accordion is connected")
+        console.log(basic)
+
+        if (basic == 'false' && intermediate == 'false' && advanced == 'false') {
           console.log('all are closed')
+            document.getElementById('square').style.height = "834px";
             document.getElementById('card-border').classList.remove('card-border');
         }
-        else if (basic == 'true' || intermediate == 'true' ||  advanced == 'true') {
+        else if (basic == 'true' || intermediate == 'true' || advanced == 'true') {
       // check to see if the aria area is expanding or not
         console.log("aria-expanded was true, area is now closed");
 
-        document.getElementById('square').style.height = "700px";
-        // document.getElementById('card-border').classList.remove('card-border');
 
-      }  else {
-          console.log('aria-expanded was false, area is now opened');
-          document.getElementById('square').style.height = "840px";
-          document.getElementById('card-border').classList.add('card-border');
+        document.getElementById('square').style.height = "700px";
+        document.getElementById('card-border').classList.remove('card-border');
+
       }
+
     };
 
   </script>
@@ -187,7 +190,7 @@ var advanced = document.getElementById('advanced').getAttribute('aria-expanded')
               <li class="arrow"><img src="./assets/img/ARROW.svg" width="50px" height="auto" style="color:#02A35A; margin: 0; display: inline-block"><p>Instructed 5 years</p></li>
               <li class="arrow"><img src="./assets/img/ARROW.svg" width="50px" height="auto" style="color:#02A35A; margin: 0; display: inline-block"><p class="long-row">Educated at International Institute of Permanent Cosmetics, The American Institute of Intradermal Cosmetics, SofTap Lasting Impressions, Everlasting Brows.</p></li>
               <p id="hide" class="long-row">&nbsp;</p>
-              <li id="widen-arrow" class="arrow"><img src="./assets/img/ARROW.svg" width="50px" height="auto" style="color:#02AD90; margin: 0 0 0 0px; display: inline-block; padding-top: 19px;"><p id="widen-arrow2" class="long-row"><strong> She is the only instructor that teaches all four modalities of permanent cosmetics</strong></p></li>
+              <li id="widen-arrow" class="arrow"><img src="./assets/img/ARROW.svg" width="50px" height="auto" style="color:#02AD90; margin: 0 0 0 0px; display: inline-block; padding-top: 19px;"><p id="widen-arrow2" class="long-row"><strong> Melissa Johnson is the only instructor in Utah that teaches all four modalities of permanent cosmetics</strong></p></li>
             </ul>
           </div>
           <div id="accordion" role="tablist" aria-multiselectable="true">
