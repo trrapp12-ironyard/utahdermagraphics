@@ -37,35 +37,148 @@
       div#square.square is the container that holds it that will need to expand-->
   <script>
 
-// var basic = document.getElementById('basic').getAttribute('aria-expanded');
-// var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
-// var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
-
-
-      function accordion() {
+  function accordion() {
 
         var basic = document.getElementById('basic').getAttribute('aria-expanded');
         var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
         var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
     // console.log("the accordion is connected")
-        console.log(basic)
+        console.log(basic + ", " + intermediate + ", " + advanced)
 
         if (basic == 'false' && intermediate == 'false' && advanced == 'false') {
           console.log('all are closed')
-            document.getElementById('square').style.height = "834px";
-            document.getElementById('card-border').classList.remove('card-border');
+          document.getElementById('cardbody1').style.webkitTransition = '1s';
+          document.getElementById('square').style.height = '834px';
+          document.getElementById('card-border').classList.remove('card-border');
+          console.log(document.getElementById('cardbody1').style.transition);
+
+
+          // #cardbody1 {
+            // -webkit-transition: width 1s; /* Safari */
+            //   transition: width 1s;
+            //   transition-timing-function: ease-in;
+            //   transition-delay: 5s;
+            //   margin-bottom: 10px;
         }
-        else if (basic == 'true' || intermediate == 'true' || advanced == 'true') {
+        else if (basic == 'true' && intermediate == 'true' && advanced == 'true') {
       // check to see if the aria area is expanding or not
-        console.log("aria-expanded was true, area is now closed");
+        console.log("oops! There was a straggler");
+        }
+        else if (basic == 'true' && intermediate == 'true' && advanced == 'false') {
+     // check to see if the aria area is expanding or not
+        console.log("oops! There was a straggler");
+        }
+        else if (basic == 'true' && intermediate == 'false' && advanced == 'true') {
+      // check to see if the aria area is expanding or not
+        console.log("oops! There was a straggler");
+        }
+        else if (basic == 'true' && intermediate == 'false' && advanced == 'false') {
+      // check to see if the aria area is expanding or not
+        console.log('aria-expanded was true, area is now closed');
 
-
-        document.getElementById('square').style.height = "700px";
+        document.getElementById('cardbody1').style.webkitTransition = '5s'
+        document.getElementById('square').style.height = '700px';
         document.getElementById('card-border').classList.remove('card-border');
-
+        console.log(document.getElementById('cardbody1').style.transition);
       }
 
     };
+
+    function accordion1() {
+
+          var basic = document.getElementById('basic').getAttribute('aria-expanded');
+          var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
+          var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
+      // console.log("the accordion is connected")
+          console.log(basic + ", " + intermediate + ", " + advanced)
+
+          if (basic == 'false' && intermediate == 'false' && advanced == 'false') {
+            console.log('all are closed')
+            document.getElementById('cardbody1').style.webkitTransition = '1s';
+            document.getElementById('square').style.height = '834px';
+            document.getElementById('card-border').classList.remove('card-border');
+            console.log(document.getElementById('cardbody1').style.transition);
+
+
+            // #cardbody1 {
+              // -webkit-transition: width 1s; /* Safari */
+              //   transition: width 1s;
+              //   transition-timing-function: ease-in;
+              //   transition-delay: 5s;
+              //   margin-bottom: 10px;
+          }
+          else if (basic == 'true' && intermediate == 'true' && advanced == 'true') {
+        // check to see if the aria area is expanding or not
+          console.log("oops! There was a straggler");
+          }
+          else if (basic == 'false' && intermediate == 'true' && advanced == 'true') {
+       // check to see if the aria area is expanding or not
+          console.log("oops! There was a straggler");
+          }
+          else if (basic == 'true' && intermediate == 'true' && advanced == 'false') {
+        // check to see if the aria area is expanding or not
+          console.log("oops! There was a straggler");
+          }
+
+          else if (basic == 'false' && intermediate == 'true' && advanced == 'false') {
+        // check to see if the aria area is expanding or not
+          console.log('aria-expanded was true, area is now closed');
+
+          document.getElementById('cardbody1').style.webkitTransition = '5s'
+          document.getElementById('square').style.height = '700px';
+          document.getElementById('card-border').classList.remove('card-border');
+          console.log(document.getElementById('cardbody1').style.transition);
+        }
+
+      };
+
+      function accordion2() {
+
+            var basic = document.getElementById('basic').getAttribute('aria-expanded');
+            var intermediate = document.getElementById('intermediate').getAttribute('aria-expanded');
+            var advanced = document.getElementById('advanced').getAttribute('aria-expanded');
+        // console.log("the accordion is connected")
+            console.log(basic + ", " + intermediate + ", " + advanced)
+
+            if (basic == 'false' && intermediate == 'false' && advanced == 'false') {
+              console.log('all are closed')
+              document.getElementById('cardbody1').style.webkitTransition = '1s';
+              document.getElementById('square').style.height = '834px';
+              document.getElementById('card-border').classList.remove('card-border');
+              console.log(document.getElementById('cardbody1').style.transition);
+
+
+              // #cardbody1 {
+                // -webkit-transition: width 1s; /* Safari */
+                //   transition: width 1s;
+                //   transition-timing-function: ease-in;
+                //   transition-delay: 5s;
+                //   margin-bottom: 10px;
+            }
+            else if (basic == 'true' && intermediate == 'true' && advanced == 'true') {
+          // check to see if the aria area is expanding or not
+            console.log("oops! There was a straggler");
+            }
+            else if (basic == 'false' && intermediate == 'true' && advanced == 'true') {
+         // check to see if the aria area is expanding or not
+            console.log("oops! There was a straggler");
+            }
+            else if (basic == 'true' && intermediate == 'false' && advanced == 'true') {
+          // check to see if the aria area is expanding or not
+            console.log("oops! There was a straggler");
+            }
+
+            else if (basic == 'false' && intermediate == 'false' && advanced == 'true') {
+          // check to see if the aria area is expanding or not
+            console.log('aria-expanded was true, area is now closed');
+
+            document.getElementById('cardbody1').style.webkitTransition = '5s'
+            document.getElementById('square').style.height = '700px';
+            document.getElementById('card-border').classList.remove('card-border');
+            console.log(document.getElementById('cardbody1').style.transition);
+          }
+
+        };
 
   </script>
   <script>(function(d, s, id) {
@@ -199,8 +312,8 @@
                 <h5 class="mb-0">
                   <p style="margin-left: 35px">
                     <button class="btn btn-primary basic" id="basic" onclick="accordion()" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Basic &nbsp;<i class="fa fa-caret-down"></i></button>
-                    <button class="btn btn-primary intermediate" id="intermediate" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate &nbsp;<i class="fa fa-caret-down"></i></button>
-                    <button class="btn btn-primary advanced" id="advanced" onclick="accordion()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced &nbsp;<i class="fa fa-caret-down"></i></button>
+                    <button class="btn btn-primary intermediate" id="intermediate" onclick="accordion1()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Intermediate &nbsp;<i class="fa fa-caret-down"></i></button>
+                    <button class="btn btn-primary advanced" id="advanced" onclick="accordion2()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Advanced &nbsp;<i class="fa fa-caret-down"></i></button>
                   </p>
                   <div class="row" id="card-border">
                     <div class="col-lg-4">

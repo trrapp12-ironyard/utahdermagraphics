@@ -455,10 +455,9 @@ h4, .h4 {
 }
 
 #cardbody1 {
-  -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+  -webkit-transition: 1s; /* Safari */
+    transition: 1s;
     transition-timing-function: ease-in;
-    transition-delay: 1s;
     margin-bottom: 10px;
 
 }
@@ -489,6 +488,10 @@ h4, .h4 {
     border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
   }
 
   #widen-arrow {
