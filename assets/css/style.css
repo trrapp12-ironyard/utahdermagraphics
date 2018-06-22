@@ -459,6 +459,7 @@ h4, .h4 {
     transition: 1s;
     transition-timing-function: ease-in;
     margin-bottom: 10px;
+    transition-delay: 4s;
 
 }
 
