@@ -171,6 +171,8 @@
     border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: height 2s ease 0s;
+    transition: height 2s ease 0s;
 }
 .vertical_padding_melissa {
     transition-duration: 0.5s;
@@ -362,6 +364,8 @@ h4, .h4 {
     border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: height 2s ease 0s;
+    transition: height 2s ease 0s;
 }
 .long-row {
     width: 545px;
@@ -450,17 +454,39 @@ h4, .h4 {
   line-height: 25px;
 }
 
+#basic {
+  transition-property: all;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-bottom: 10px;
+  transition-delay: 4s;
+  transition-property: all;
+}
+
 #basic[aria-expanded="true"] ~ div#square.square {
   background: red;
 }
+/*         document.getElementById('square').style.height = '834px';
+        document.getElementById('card-border').classList.remove('card-border');
+        document.getElementById('cardbody1').style.transitionDelay = "5s";
+        document.getElementById('multiCollapseExample1').style.transitionDelay = "5s";
+        document.getElementById('card-border').style.transitionDelay = "5s";
+        document.getElementById('card-header').style.transitionDelay = "5s";
+        document.getElementById('headingOne').style.transitionDelay = "5s";
+        document.getElementById('accordion').style.transitionDelay = "5s"; */
 
-#cardbody1 {
-  -webkit-transition: 1s; /* Safari */
-    transition: 1s;
-    transition-timing-function: ease-in;
+#multiCollapseExample1 {
+    transition-property: all;
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -ms-transition: all 5s ease;
+    -o-transition: all 5s ease;
+    transition: all 5s ease;
     margin-bottom: 10px;
-    transition-delay: 4s;
-
+    transition-delay: 5s;
 }
 
 #card-border {
@@ -489,10 +515,8 @@ h4, .h4 {
     border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: 2s; /* Safari */
-    transition: 2s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
+    -webkit-transition: height 2s ease 0s;
+    transition: height 2s ease 0s;
   }
 
   #widen-arrow {
@@ -500,3 +524,18 @@ h4, .h4 {
   }
 
 }
+
+
+.collapsing {
+  position:relative;
+  height:0;
+  overflow:hidden;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  transition-duration: 5s;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility}
