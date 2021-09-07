@@ -11,7 +11,8 @@
 
 ### Description:
 
-My client for this project was a entrepenuer who was well established in the dermagraphics area, but didn't have an updated web presence.  
+My client for this project was a entrepenuer who was well established in the dermagraphics area, but didn't have an updated web presence.  This webpage was a proof of concept to demonstrate what the web-page would look like with improved design principles and better UX.
+
 ---
 
 ### Project demonstrates the following:
