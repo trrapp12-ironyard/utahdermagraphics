@@ -10,6 +10,8 @@
 ---
 
 ### Description:
+
+My client for this project was a entrepenuer who was well established in the dermagraphics area, but didn't have an updated web presence.  
 ---
 
 ### Project demonstrates the following:
