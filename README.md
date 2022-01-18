@@ -20,19 +20,23 @@
 
 My client for this project was a entrepenuer who was well established in the dermagraphics area, but didn't have an updated web presence.  This webpage was a proof of concept to demonstrate what the web-page would look like with improved design principles and better UX.
 
+
 ---
 
 ### Project demonstrates the following:
----
+
 
 - [x] Use of CSS3 and HTML5 and JavaScript.
 
-### Project published at: 
 ---
 
+### Project published at: 
+
+
+---
 
 ### More Information:
----
+
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
 
